@@ -1,0 +1,10 @@
+<h1>Beer Info</h1>
+
+<p>Name: <%= @beer.name %></p>
+<p>Style: <%= @beer.style %></p>
+<p>Alcohol Content: <%= @beer.alcohol %></p>
+
+<%= link_to "Edit", "/beers/#{@beer.id}/edit" %>
+<%= form_tag "/beers/#{@beer.id}", method:  :delete do %>
+  <%= submit_tag "Delete Beer" %>
+<% end %>

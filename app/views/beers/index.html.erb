@@ -1,0 +1,10 @@
+<h1>Beer List</h1>
+
+<% @beers.each do |beer|%>
+<p>Name: <%= beer.name %></p>
+<p>Style: <%= beer.style %></p>
+<p>Alcohol: <%= beer.alcohol %></p>
+<p></p>
+<p>----------------------------------</p>
+<br>
+<% end %>
