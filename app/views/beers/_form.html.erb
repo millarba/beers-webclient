@@ -1,0 +1,21 @@
+<h1><%= title %></h1> 
+
+<%= form_tag url, method:  verb do %>
+  <div>
+  <%= label_tag :name %>
+  <%= text_field_tag :name, @beer.name %>
+  </div>
+  <div>
+  <%= label_tag :style %>
+  <%= text_field_tag :style, @beer.style %>
+  </div>
+  <div>
+  <%= label_tag :ibu %>
+  <%= text_field_tag :ibu, @beer.ibu %>
+  </div>
+  <div>
+  <%= label_tag :alcohol %>
+  <%= text_field_tag :alcohol, @beer.alcohol %>
+  </div>
+  <%= submit_tag "#{title}" %>
+<% end %>
